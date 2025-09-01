@@ -11,5 +11,6 @@ print("Дата фото:", data["date"])
 print("Описание:")
 
 wrapper = textwrap.TextWrapper(width=80)
-wrapped_text = wrapper.fill(text=data["explanation"])
+wrapped_text = wrapper.fill(text=data["explanation"]) #Метод fill() объекта TextWrapper берёт текст (data["explanation"]) и возвращает его в виде строки, где длинные строки разбиты на несколько по 80 символов.
 print(wrapped_text)
+
